@@ -1,0 +1,119 @@
+.form input[type='date'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='text'],
+.form input[type='number'],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  padding-right: 0px;
+  margin-left: 0;
+}
+
+input:focus {
+  background-color: #f4f3f3;
+  transition: 0.5s;
+}
+
+.form input[type='date'],
+.form input[type='email'],
+.form input[type='number'],
+.form input[type='password'],
+.form input[type='text'],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  border-radius: 10px;
+  margin-left: 0;
+}
+.form input[type='date']:focus,
+.form input[type='email']:focus,
+.form input[type='number']:focus,
+.form input[type='password']:focus,
+.form input[type='text']:focus,
+.form select:focus,
+.form textarea:focus {
+  outline: none !important;
+  border-color: rgb(255, 153, 0);
+  box-shadow: 0 0 10px rgb(255, 153, 0);
+}
+
+label {
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.profile-about {
+  padding: 20px;
+  background-color: #fff;
+  text-align: left;
+  /* background-image: url('images/back.jpg'); */
+  /* overflow: hidden; */
+  /* background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: top center;
+    background-attachment: fixed;
+    padding: 10em;
+    background-image: url(images/back.jpg);
+    background-size: 1500px 700px; */
+}
+
+.bg-light {
+  /* border: #000000 groove; */
+  background-color: #fff;
+  box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.colored-heading {
+  background-color: #fffaa4;
+  padding: 7px;
+}
+.colored-heading h2 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .colored-heading h2 {
+    font-size: 1.5rem;
+  }
+}
+
+select {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  border-radius: 10px;
+  margin-left: 0;
+}
+select:focus {
+  outline: none !important;
+  border-color: rgb(255, 153, 0);
+  box-shadow: 0 0 10px rgb(255, 153, 0);
+}
+
+.view {
+  color: #fff;
+}
+.view:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-texts {
+  font-size: 20px;
+  color: black;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}

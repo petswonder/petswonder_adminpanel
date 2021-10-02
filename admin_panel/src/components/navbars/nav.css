@@ -1,0 +1,265 @@
+.bg-nav
+{
+    background-color: #e1ad01;
+}
+
+.text-nav
+{
+    color:white;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text-nav:hover
+{
+    background-color: #e0c56d;
+    text-decoration: none;
+    color:white;
+}
+
+.ans{
+    font-size: 15px;
+    background-color: #b0eacd;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/* productpanel.js file */
+
+.product-container
+{
+    justify-content: center;
+    margin-top: 100px;
+    box-shadow: -10px 10px 10px 5px rgb(192, 191, 191);
+    width:75%
+}
+
+.title
+{
+    text-shadow: 5px 5px 4px rgb(253, 147, 85);
+    color:rgb(3, 3, 146);
+}
+
+.panel-border
+{
+    padding: 15px 300px;
+}
+
+.submit-btn
+{
+    margin: 0px 150px;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    .product-container
+    {
+        justify-content: center;
+        margin-top: 100px;
+        box-shadow: -10px 10px 10px 5px rgb(192, 191, 191);
+        width: 75%;
+    }
+
+    .title
+    {
+        text-shadow: 5px 5px 4px rgb(253, 147, 85);
+        color:rgb(3, 3, 146);
+    }
+
+    .panel-border
+    {
+        padding: 15px 300px;
+    }
+
+    .submit-btn
+    {
+        margin-left:500px;
+    }
+    
+    .input-txt
+    {
+        width: 75%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+    .product-container
+    {
+        justify-content: center;
+        margin-top: 100px;
+        box-shadow: -10px 10px 10px 5px rgb(192, 191, 191);
+        width: 60%;
+    }
+
+    .panel-border
+    {
+        padding: 5px 25px 10px 30px;
+    }
+
+    .submit-btn
+    {
+        margin: 0px 30px 0px 150px;
+    }
+
+    .input-txt
+    {
+        width: 100%;
+    }
+
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) 
+{
+    .product-container
+    {
+        justify-content: center;
+        margin-top: 100px;
+        box-shadow: -3px 3px 3px rgb(192, 191, 191);
+        width: 85%;
+        margin-left:0px;
+    }
+
+    .panel-border
+    {
+        padding: 8px 10px 8px 10px;
+    }
+
+    .submit-btn
+    {
+        margin: 0px 60px;
+    }
+
+    .input-txt
+    {
+        width: 100%;
+    }
+    
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Table in usersorder */
+
+th
+{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    th
+    {
+        font-size: 20px;
+        font-weight: 400;
+    }
+ 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+    th
+    {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    table
+    {
+        width: 50%;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/* productpanelaxios.js file */
+
+.apis-data
+{
+    margin:100px 150px;
+}
+
+.overflow
+{
+    overflow:auto;
+    height:400px;
+}
+
+.input-txt
+{
+    width: 100%;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    .apis-data
+    {
+        margin:100px 300px;
+        width: 50%;
+    }
+
+    .overflow
+    {
+        overflow:auto;
+        height:400px;
+        padding:50px 100px;
+    }
+
+    .input-txt
+    {
+        width: 100%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+    
+    .overflow
+    {
+        overflow:auto;
+        height:350px;
+    }
+
+    .input-txt
+    {
+        width: 100%;
+    }
+
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) 
+{
+    .apis-data
+    {
+        margin:50px 20px;
+    }
+
+    .overflow
+    {
+        overflow:auto;
+        height:300px;
+    }
+
+    .input-txt
+    {
+        width: 100%;
+    }
+
+}
+
+/* table styles */
