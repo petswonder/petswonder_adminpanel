@@ -39,7 +39,9 @@ app.use(
   })
 );
 
-app.use(cors())
+app.use(cors({
+  origin: 'https://www.petswonder.in'
+}))
 
 // Passport config
 import defaultExport from "./src/config/passport.js";
