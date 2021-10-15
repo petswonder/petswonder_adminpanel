@@ -41,7 +41,10 @@ app.use(
 
 app.use(cors({
   origin: '*',
-  methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
+  methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH'],
+  allowedHeaders: [
+    'Content-Type',
+  ]
 }))
 
 // Passport config
@@ -82,10 +85,10 @@ app.use(cookieParser());
 // Global variables
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", '*'); // update to match the domain you will make the request from
-  // res.header("Access-Control-Allow-Headers", "content-type, xsrf-token");
+  res.header("Access-Control-Allow-Headers", "content-type");
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
   res.header("Access-Control-Allow-Credentials", true);
-  res.header("Access-Control-Allow-Headers","Access-Control-Allow-Headers")
+  // res.header("Access-Control-Allow-Headers","Access-Control-Allow-Headers")
   // res.locals._csrf = req.csrfToken();
   // var token = req.csrfToken();
   // res.cookie('XSRF-TOKEN', token);
