@@ -40,7 +40,7 @@ app.use(
 );
 
 app.use(cors({
-  origin: 'https://www.petswonder.in'
+  origin: '*'
 }))
 
 // Passport config
