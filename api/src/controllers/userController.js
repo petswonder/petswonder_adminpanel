@@ -1,5 +1,5 @@
 // Import dependencies
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import passport from "passport";
 import AWS from 'aws-sdk'
 import {} from "dotenv/config.js";
@@ -85,9 +85,12 @@ export class UserController {
 
   async loginUser(req, res){
     const mobile = req.body.userNumber;
+    // console.log(req.body)
     const password = req.body.password;
     const user = User.getUser(mobile)
-    user.then(user => {
+    
+    User.getUser(mobile).then(user => {
+      
       bcrypt.compare(password, user[0].user_pwd).then(validPass => {
         if(validPass){
           res.send(JSON.stringify(user))

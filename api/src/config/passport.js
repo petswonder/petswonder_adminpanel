@@ -1,7 +1,7 @@
 // Import dependencies
 import passportLocal from "passport-local";
 const LocalStrategy = passportLocal.Strategy;
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 // Import models
 import { UserModel } from "../models/UserModel.js";
