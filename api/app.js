@@ -40,6 +40,7 @@ app.use(
 );
 
 app.use(cors())
+app.options('*', cors()) 
 
 // Passport config
 import defaultExport from "./src/config/passport.js";
