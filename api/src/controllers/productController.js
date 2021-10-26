@@ -67,8 +67,9 @@ export class ProductController {
 
     async getProductBySubCategory(req, res){
         try{
-            let pet = req.body.pet
-            let category = req.body.category
+            let pet = req.query.pet
+            let category = req.query.category
+            // console.log(req.query)
             let result = await Product.getProductBySubCategory(category, pet)
             res.end(JSON.stringify(result))
         }catch(e) {
