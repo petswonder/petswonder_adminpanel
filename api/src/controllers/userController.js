@@ -40,6 +40,7 @@ export class UserController {
 
   async sendOTP(req, res){
     try{
+
       var otp = generateOTP(1000,9999)
       var params = {
           Message: 'Welcome to Petswonder! Your mobile verification code is: ' + otp ,
@@ -130,6 +131,7 @@ export class UserController {
     const user_mobile = req.body.userNumber
     const product_id = req.body.productId
     const count = req.body.count
+    console.log(req.body)
     try{
       let result = await User.updateCart(count, user_mobile, product_id)
       res.end(JSON.stringify('success'))

@@ -16,7 +16,7 @@ export const queries = {
         add_to_cart : "INSERT INTO cart_details (user_mobile, product_quantity, product_id, cart_id) values (?, 1, ?, (SELECT cart_id from cart where user_mobile=? AND status='Not Ordered')) ON DUPLICATE KEY UPDATE product_quantity = product_quantity + 1",
         create_user_cart : "INSERT INTO cart (user_mobile,createdAt) VALUES ( ? , NOW())",
         get_user_cart : "SELECT * FROM cart_details INNER JOIN products ON cart_details.product_id=products.product_id WHERE cart_details.user_mobile = ?",
-        // update_user_cart : "UPDATE cart SET product_quantity = ? WHERE user_mobile = ? AND product_id = ?",
+        update_user_cart : "UPDATE cart_details SET product_quantity = ? WHERE cart_id = ( SELECT cart_id FROM cart where user_mobile= ? AND status='Not Ordered') AND product_id = ? ;",
         delete_item : "DELETE from cart where user_mobile = ? AND product_id = ? ",
         delete_cart : "DELETE from cart where user_mobile = ?",
         cart_summary: "SELECT SUM(product_quantity * product_price) as mrp, SUM(product_quantity * product_price * product_discount/100) as discount,SUM(product_price * product_gst/100) as gst, 50 as delivery, 0 as plus_points FROM cart_details INNER JOIN products ON cart_details.product_id=products.product_id WHERE cart_details.user_mobile = ?",
